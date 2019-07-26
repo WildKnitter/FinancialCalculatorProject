@@ -1,10 +1,5 @@
 /* This is an additional stylesheet for the Financial Calculations site*/
 
-/* Hide Success and Danger Msg Elements on page load */
-.hidden {
-  display: none;
-}
-
 /* Stylesheet code from the Bootstrap Jumbotron template */
 
 .bd-placeholder-img {
@@ -27,7 +22,7 @@
 .jumbotron {
   padding: 2rem 1rem 1rem;
   margin-bottom: 2rem;
-  background-color: #DCD0E5;
+  background-color: #4cacbb;
   border-radius: 0.3rem;
 }
 
@@ -40,7 +35,7 @@ header {
 body {
   background-color: lavender;
   height: 100%;
-  background-image: radial-gradient(white, lavender, #DCD0E5);
+  background-image: radial-gradient(white, #d0d5d6, #4cacbb);
 }
 
 /* Formatting for the Footer */
@@ -58,51 +53,72 @@ footer {
   text-decoration: underline;
 }
 
-/* Change button color */
-
-.btn-purple {
-  color: #fff;
-  background-color: purple;
-  border-color: rgb(119, 2, 119);
-}
-
 .btn-margin {
   margin: auto;
   display: inline;
 }
 
-/* Change the background stripe color for the Shopping Cart table */
-
-tr:nth-child(even) {
-  background-color: #DCD0E5;
-}
-
 /* Extra-Small devices (landscape phones, 576px and down) */
 
 @media (max-width: 576px) {
-  
+  #imgcalculator {
+    background-image: url("../img/calculator_small.jpg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+  #imgcalculator {
+    background-image: url("../img/calculator_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  
+  #imgcalculator {
+    background-image: url("../img/calculator_medium.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  
+  #imgcalculator {
+    background-image: url("../img/calculator_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {: no-repeat;
-  
+@media (min-width: 1200px) {
+  #imgcalculator {
+    background-image: url("../img/calculator_large.jpg");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-

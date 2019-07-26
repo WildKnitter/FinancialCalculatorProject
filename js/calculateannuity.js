@@ -1,0 +1,31 @@
+"use strict";
+//This scripts contains code to calculate the present value of an annuity, 
+// upon entering the annual payout, the expected interest rate, 
+// and the years to pay out.
+//Author:  Pam Belknap
+
+function init() 
+{
+    const btnCalcAnn = document.getElementById("calcAnnuity");
+    btnCalcAnn.onclick = calcAnnuity;
+}
+
+//DETERMINE PRESENT VALUE OF AN ANNUITY
+function calcAnnuity() 
+{
+    let payAmount = document.getElementById("payoutAmount").value;
+    payAmount = Number(payAmount);
+    let intAnnRate = document.getElementById("interestAnnuityRate").value;
+    intAnnRate = Number(intAnnRate);
+    let payYears = document.getElementById("payoutYears").value;
+    payYears = Number(payYears);
+    let intAnnRateD = (intAnnRate / 100);
+
+    let futureValueTotal = payAmount * (Math.pow(1 + intAnnRateD, payYears) - 1) / (Math.pow(1 + intAnnRateD, payYears) * intAnnRateD);
+
+    const resultAnswer = document.getElementById("answerTotal");
+    resultAnswer.value = futureValueTotal.toFixed(2);
+}
+
+window.onload = init;
+
