@@ -8,7 +8,7 @@ function init()
     btnCalc.onclick = calcMortgage;
 }
 
-//ADD NUMBERS
+//CALCULATE MONTHLY MORTGAGE AND TOTAL LOAN COST
 function calcMortgage() 
 {
     let princAmount = document.getElementById("principalAmount").value;
