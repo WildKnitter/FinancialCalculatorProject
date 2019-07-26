@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>BanksRUs</title>
+    <!--THIS IS THE ANNUITY PAGE FOR THE FINANCIAL CALCULATION PROJECT-->
+</head>
+
+<body>
+    <!--Top Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+            aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mortgagecalc.html">Mortgage Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cdcalc.html">CD Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="annuitycalc.html">Annuity Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Top Navigation Bar End-->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <header>
+                <h1 class="display-3">Banks 'R' Us</h1>
+                <h2>Annuity Calculation - Present Value</h2>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <p><strong>Enter information, click a button, and plan your retirement!</strong>
+                        </p>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <!--Junbotron heading end -->
+
+    <main>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Annuity Information</h3>
+                    <br />
+                    <p>Desired Annual Payout: <input type="number" id="payoutAmount" /></p>
+                    <p>Interest Rate: <input type="number" id="interestAnnuityRate" /></p>
+                    <p>Years to Pay Out: <input type="number" id="payoutYears" /></p>
+                    <br />
+                    <p><input id="calcCd" class="btn btn-purple" role="button" type="button" value="Calculate!" /></p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Present Value</h3>
+                    <br />
+                    <p>Your Present Value (Starting Pricipal) would need to be: </p>
+                    <p><input type="number" id="answertotal" /></p>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+        <p>&copy; Banks 'R' Us 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
