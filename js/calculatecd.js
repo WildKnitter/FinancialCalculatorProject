@@ -1,5 +1,6 @@
 "use strict";
-//This scripts contains code to calculate the future value of an initial investment, assuming compound interest.
+//This scripts contains code to calculate the future value of an initial investment, 
+// assuming compound interest.
 //Author:  Pam Belknap
 
 function init() 
