@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>BanksRUs</title>
+    <!--THIS IS THE MORTGAGE PAGE FOR THE FINANCIAL CALCULATION PROJECT-->
+</head>
+
+<body>
+    <!--Top Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+            aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="mortgagecalc.html">Mortgage Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cdcalc.html">CD Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="annuitycalc.html">Annuity Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Top Navigation Bar End-->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <header>
+                <h1 class="display-3">Banks 'R' Us</h1>
+                <h2>Mortgage Calculation</h2>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <p><strong>Enter information, click a button, and follow your dreams!</strong></p>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <!--Junbotron heading end -->
+
+    <main>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Mortgage Information</h3>
+                    <p>Discover whether you can afford that dream home!</p>
+                    <p>Principal: <input type="number" id="principalAmount" /></p>
+                    <p>Interest Rate: <input type="number" id="interestRate" /></p>
+                    <p>Loan Length (yrs): <input type="number" id="loanLength" /></p>
+                    <br />
+                    <input id="calcMortgage" class="btn btn-purple" type="button" value="Calculate!" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Can I afford it?</h3>
+                    <p>Your Monthly Payment will be: <input type="number" id="answerPayment" /></p>
+                    <p>Your Total Loan Cost will be: <input type="number" id="answerLoanCost" /></p>
+                </div>
+            </div>
+            <br />
+        </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+        <p>&copy; Banks 'R' Us 2019</p>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript-->
+    <script src="js/calculatemortgage.js"></script>
+
+</body>
+
+</html>
