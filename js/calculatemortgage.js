@@ -4,7 +4,6 @@
 * @param interestRate (number) - the interest rate
 * @param loanLength (number) - the length of time for the loan in years
 Author:  Pam Belknap
-
 */
 
 function init() 
