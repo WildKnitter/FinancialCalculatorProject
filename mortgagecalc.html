@@ -62,24 +62,45 @@
     <main>
 
         <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Mortgage Information</h3>
-                    <p>Please enter numerals - no commas.</p>
-                    <p>Principal: $<input type="number" id="principalAmount" /></p>
-                    <p>Interest Rate: $<input type="number" id="interestRate" /></p>
-                    <p>Loan Length (yrs): $<input type="number" id="loanLength" /></p>
-                    <br />
-                    <input id="calcMortgage" class="btn btn-info" type="button" value="Calculate!" />
+            <form id="mortgageForm" method="get" action="#">
+                <!-- post would be the correct method, normally.
+            <form method="post" action="#" > -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Mortgage Information</h3>
+                        <p>Please enter numerals - no commas, no negative amounts.</p>
+                        <!--Principal Amount-->
+                        <label for="principalAmount">Principal: </label>
+                        <input type="number" id="principalAmount" name="principalAmount" class="form-control"
+                            placeholder=$0.00>
+                        <!--Interest Rate-->
+                        <label for="interestRate">Interest Rate: </label>
+                        <input type="number" id="interestRate" name="interestRate" class="form-control"
+                            placeholder=0.00>
+                        <!--Loan Length-->
+                        <label for="loanLength">Loan Length (yrs): </label>
+                        <input type="number" id="loanLength" name="loanLength" class="form-control" placeholder=0>
+                        <br />
+                        <div id="buttongroup" class="container">
+                            <input class="btn btn-sm btn-info" id="calcMortgage" type="button"
+                                value="Calculate!"></input>
+                            <input class="btn btn-sm btn-light" id="resetBtn" type="reset"></input>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Can I afford it?</h3>
+                        <!--Answer Monthly Payment-->
+                        <label for="answerPayment">Your Monthly Payment will be: </label>
+                        <input type="number" id="answerPayment" name="answerPayment" class="form-control"
+                            placeholder=$0.00>
+                        <!--Answer Total Loan Cost-->
+                        <label for="answerLoanCost">Your Monthly Payment will be: </label>
+                        <input type="number" id="answerLoanCost" name="answerLoanCost" class="form-control"
+                            placeholder=$0.00>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h3>Can I afford it?</h3>
-                    <p>Your Monthly Payment will be: $<input type="number" id="answerPayment" /></p>
-                    <p>Your Total Loan Cost will be: $<input type="number" id="answerLoanCost" /></p>
-                </div>
-            </div>
-            <br />
+                <br />
+            </form>
         </div> <!-- /container -->
 
     </main>
