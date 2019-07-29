@@ -58,6 +58,12 @@ footer {
   display: inline;
 }
 
+#errorMsg {
+  color: red;
+  font-weight: bold;
+
+}
+
 
 /* Extra-Small devices (landscape phones, 576px and down) */
 

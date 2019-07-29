@@ -63,29 +63,49 @@
     <main>
 
         <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>CD Information</h3>
-                    <p>Please enter numerals - no commas.</p>
-                    <p>Initial Deposit: $<input type="number" id="depositAmount" /></p>
-                    <p>Annual Interest Rate: $<input type="number" id="interestCdRate" /></p>
-                    <p>Number of Years: $<input type="number" id="loanCdLength" /></p>
-                    <br />
-                    <p><input id="calcCd" class="btn btn-info" type="button" value="Calculate!" />
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Future Worth</h3>
-                    <br />
-                    <p>Your Future Value will be: $<input type="number" id="answerFV" /></p>
-                    <p>Your Interest Earned will be: $<input type="number" id="answerIntEarn" /></p>
-                </div>
-            </div>
+            <form id="cdForm" method="get" action="#">
+                <!-- post would be the correct method, normally.
+                <form method="post" action="#" > -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>CD Information</h3>
+                        <p>Please enter numerals - no commas, no negative numbers.</p>
+                        <!--Initial Deposit Amount-->
+                        <label for="depositAmount">Initial Deposit: </label>
+                        <input type="number" id="depositAmount" name="depositAmount" class="form-control"
+                            placeholder=$0.00>
 
+                        <!--Annual Interest Rate-->
+                        <label for="interestCdRate">Annual Interest Rate: </label>
+                        <input type="number" id="interestCdRate" name="interestCdRate" class="form-control"
+                            placeholder=0.00>
 
+                        <!--Number of Years Held-->
+                        <label for="loanCdLength">Number of Years: </label>
+                        <input type="number" id="loanCdLength" name="loanCdLength" class="form-control"
+                            placeholder=0.00>
+                        <br />
+                        <div id="buttongroup" class="container">
+                            <input class="btn btn-sm btn-info" id="calcCd" type="button" value="Calculate!">
+                            <input class="btn btn-sm btn-light" id="resetBtn" type="reset">
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Future Worth</h3>
+                        <br />
+                        <!--Answer for Future Value-->
+                        <label for="answerFV">Your Future Value will be: </label>
+                        <input type="number" id="answerFV" name="answerFV" class="form-control" placeholder=$0.00>
+                        <!--Answer for Interest Earned-->
+                        <label for="answerIntEarn">Your Interest Earned will be: </label>
+                        <input type="number" id="answerIntEarn" name="answerIntEarn" class="form-control"
+                            placeholder=$0.00>
+                        <p id="errorMsg"></p>
+                    </div>
+                </div>
+            </form>
         </div> <!-- /container -->
-
     </main>
 
     <footer class="container">
