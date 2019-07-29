@@ -63,27 +63,42 @@
     <main>
 
         <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Annuity Information</h3>
-                    <br />
-                    <p>Please enter numerals - no commas.</p>
-                    <p>Desired Annual Payout: $<input type="number" id="payoutAmount" /></p>
-                    <p>Interest Rate: $<input type="number" id="interestAnnuityRate" /></p>
-                    <p>Years to Pay Out: $<input type="number" id="payoutYears" /></p>
-                    <br />
-                    <p><input id="calcAnnuity" class="btn btn-info" type="button" value="Calculate!" />
-                    </p>
+            <form id="annuityForm" method="get" action="#">
+                <!-- post would be the correct method, normally.
+                <form method="post" action="#" > -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Annuity Information</h3>
+                        <br />
+                        <p>Please enter numerals - no commas, no negative numbers.</p>
+                        <!--Payout Amount-->
+                        <label for="payoutAmount">Desired Annual Payout: </label>
+                        <input type="number" id="payoutAmount" name="payoutAmount" class="form-control"
+                            placeholder=$0.00>
+                        <!--Interest Rate-->
+                        <label for="interestAnnuityRate">Interest Rate: </label>
+                        <input type="number" id="interestAnnuityRate" name="interestAnnuityRate" class="form-control"
+                            placeholder=0.00>
+                        <!--Years to Pay Out-->
+                        <label for="payoutYears">Years to Pay Out: </label>
+                        <input type="number" id="payoutYears" name="payoutYears" class="form-control" placeholder=0.00>
+                        <br />
+                        <div id="buttongroup" class="container">
+                            <input class="btn btn-sm btn-info" id="calcAnnuity" type="button"
+                                value="Calculate!">
+                            <input class="btn btn-sm btn-light" id="resetBtn" type="reset">
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-md-6">
+                        <!--Answer for Present Value-->
+                        <h3>Present Value</h3>
+                        <br />
+                        <label for="answerTotal">Your Present Value (Starting Principal) would need to be: </label>
+                        <input type="number" id="answerTotal" name="answerTotal" class="form-control" placeholder=$0.00>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h3>Present Value</h3>
-                    <br />
-                    <p>Your Present Value (Starting Principal) would need to be: </p>
-                    <p>$<input type="number" id="answerTotal" /></p>
-                </div>
-            </div>
-
+            </form>
         </div> <!-- /container -->
 
     </main>
